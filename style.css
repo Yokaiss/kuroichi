@@ -1,0 +1,35 @@
+/* Agrega este bloque de estilos en tu hoja de estilos CSS */
+::selection {
+  background-color: #888; /* Color de fondo gris para la selección */
+  color: #fff; /* Color del texto en la selección */
+}
+
+/* Estilo adicional para el texto */
+.creditos {
+  position: absolute;
+  bottom: 10px; /* Distancia desde la parte inferior */
+  right: 10px; /* Distancia desde la parte derecha */
+  font-size: 12px;
+  color: #888; /* Color del texto por defecto */
+  transition: color 0.3s; /* Agregar una transición para suavizar el cambio de color */
+  z-index: 1001; /* Asegurar que el texto esté por encima de otros elementos (ajusta según sea necesario) */
+}
+
+.creditos:hover {
+  color: #fff; /* Cambiar el color a blanco en el hover */
+}
+
+
+#overlay {
+    width: 670px;
+    height: 484px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -18rem 0rem 0rem -54rem;
+    background-color: transparent;
+    background-image: url('https://static.tumblr.com/56a2d014e3ec918d0a5ab210a18367f3/3przrzw/o61pm02ku/tumblr_static_5no77aw2bpgk8ckk8sc4skkko.png');
+    background-repeat: no-repeat;
+    z-index: 99;
+    cursor: pointer; /* Añade esto para mostrar el cursor como un puntero */
+}
