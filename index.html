@@ -34,7 +34,7 @@
 
         #playButton {
             position: absolute;
-            bottom: -230px; /* Ajustado hacia abajo */
+            bottom: -260px; /* Ajustado hacia abajo */
             left: 600px; /* Ajustado hacia la izquierda */
             background-color: #EEEEEE;
             color: #---;
@@ -66,6 +66,10 @@
         var audio = new Audio('https://cdn.discordapp.com/attachments/1108147175776595979/1184586901508849764/ichigovoice.mp3');
 
         function playSound() {
+            // Ajusta el volumen (rango: 0.0 a 1.0)
+            audio.volume = 1.5; // Puedes ajustar este valor según tus preferencias
+
+            // Reproduce el sonido
             audio.play();
         }
     </script>
